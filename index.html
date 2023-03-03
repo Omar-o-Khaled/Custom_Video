@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" href="css/line.css">
+    <link rel="stylesheet" href="css/video.css">
+</head>
+<body>
+    
+    <h1>Custom Video Player</h1>
+    <div class="container">
+        <!-- poster="img/poster.png" -->
+        <video  class="video" id="screen" >
+            <source  src="video/All over in 10 seconds.mp4" >
+        </video>
+        <div class="controls">
+            <button class="btn" id="play">
+                <ion-icon name="play" class="play"></ion-icon>
+            </button>
+            <button class="btn" id="stop">
+                <ion-icon name="stop" class="stop"></ion-icon>
+            </button>
+    
+            <input type="range" name="progress" id="progress" min="0" max="100" step="0.1" value="0">
+            <span class="timestamp" id="timestamp">00:00</span>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/video.js"></script>
+</body>
+</html>
